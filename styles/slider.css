@@ -43,7 +43,6 @@
   opacity: 1;
 }
 .gallery-thumbs .swiper-slide img,.gallery-thumbs1 .swiper-slide img{
-  width: auto;
   height: 100%;
 }
 
