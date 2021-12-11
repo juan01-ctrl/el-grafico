@@ -15,7 +15,7 @@ sliderShow.addEventListener("click", (e) => {
     e.target.classList.contains("nav_gallery-videos") &&
     galleryVideos.classList.contains("none")
   ) {
-    console.log("hola");
+
     galleryVideos.classList.remove("none");
     galleryPhotos.classList.add("none");
   }

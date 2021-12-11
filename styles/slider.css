@@ -60,3 +60,7 @@
 .gallery-slider .swiper-slide img, .gallery-slider1 .swiper-slide img{
   width: 100%;
 }
+
+.swiper-button-next, .swiper-button-prev{
+  color: #fff;
+}
