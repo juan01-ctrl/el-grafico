@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>El Gráfico 2021</title>
+  <meta name="description" content="A new Yeogurt application">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.js" integrity="sha512-7i2V4phHspcYYpLujbQU0Ur1NjN6h0oWic1YVo8V1gLtBzOziltT3XX/5XaAmhbvtx3QjyANL/MIyuTpXh/Ndw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.css" integrity="sha512-MKxcSu/LDtbIYHBNAWUQwfB3iVoG9xeMCm32QV5hZ/9lFaQZJVaXfz9aFa0IZExWzCpm7OWvp9zq9gVip/nLMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.js" integrity="sha512-g3FJPwAwaXCWh7vnq0+Jq2v2eB2DuELCYRJ7xi7yIPCYM6SdYNxAWZCBKhl9ZyysWHEWie3q0VUcnxTyoCsT7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+  <!--[if lt IE 11]>
+  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <header class="header">
+    <div class="header__top">
+      <button class="header__hamburguer"><span> </span><span> </span><span></span></button>
+      <div class="header__logo"> <a href="/"><img src="../images/logo.svg"></a></div>
+      <div class="header__side"> <img src="../images/maradona.png" class="header__maradona">
+        <ul class="header__social">
+          <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li> <a href="#"><i class="fa fa-facebook"> </i></a></li>
+          <li> <a href="#"><i class="fab fa-tiktok"> </i></a></li>
+          <li> <a href="#"><i class="fa fa-youtube-play"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <nav class="header__bottom">
+      <div class="header__info"> 
+        <p class="header__weather"><i class="material-icons">wb_sunny</i><span class="_temp">32º</span><span class="_location">Buenos Aires, AR </span></p>
+        <p class="header__date">Jueves 10 de febrero de 2021</p>
+      </div>
+      <button class="header__hamburguer"><span> </span><span> </span><span></span></button>
+      <button class="header__search"><i class="fa fa-search"></i></button>
+      <ul class="header__main-menu">
+        <li> <a href="#">Fútbol</a></li>
+        <li> <a href="#">Tenis</a></li>
+        <li> <a href="#">Polideportivo</a></li>
+        <li> <a href="#">Opinión</a></li>
+        <li> <a href="#">EG Histórico</a></li>
+      </ul>
+      <div class="header__internal-menu__wrapper">
+        <!--button.header__internal-menu__close-->
+        <ul class="header__internal-menu">
+          <li class="header__internal-menu__section">Menu de contenidos
+            <ul class="header__internal-menu__links">
+              <li><a href="#">FÚTBOL ARGENTINO</a></li>
+              <li><a href="#">LA JORNADA ESTÁ AQUÍ</a></li>
+              <li><a href="#">CONMEBOL LIBERTADORES</a></li>
+              <li><a href="#">MEMORIA EMOTIVA</a></li>
+              <li><a href="#">¡HABLA MEMORIA</a></li>
+              <li><a href="#">HEMEROTECA</a></li>
+              <li><a href="#">MARADONA Y EL GRÁFICO</a></li>
+              <li><a href="#">JUEGOS OLÍMPICOS</a></li>
+            </ul></li>
+          <li class="header__internal-menu__section">Fotos
+            <ul class="header__internal-menu__links">
+              <li><a href="#">HEMEROTECA</a></li>
+              <li><a href="#">LAS FOTOS DE EL GRÁFICO</a></li>
+              <li><a href="#">LA TAPA</a></li>
+            </ul></li>
+          <li class="header__internal-menu__section">Videos
+            <ul class="header__internal-menu__links">
+              <li><a href="#">MEMORIA EMOTIVA</a></li>
+              <li><a href="#">LA JORNADA ESTÁ AQUÍ</a></li>
+              <li><a href="#">FÚTBOL ARGENTINO</a></li>
+            </ul></li>
+          <li class="header__internal-menu__section">NUESTRA HISTORIA
+            <ul class="header__internal-menu__links">
+              <li><a href="#">NAVEGADOR DE TAPAS</a></li>
+              <li><a href="#">100 años de El Gráfico</a></li>
+            </ul></li>
+          <li class="header__internal-menu__section">SERVICIOS
+            <ul class="header__internal-menu__links">
+              <li><a href="#">VENTA DE FOTOS</a></li>
+              <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+              <li><a href="#">CONTACTO</a></li>
+            </ul></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="contenedor-medio">
+
+    <div class="contenedor-navegador-tapas">
+      <div class="contenedor-titulo">
+
+        <div class="titulo-princ-am">
+
+          <h1>Navegador de Tapas</h1>
+          <label class="subrayado-amarillo title tapas"></label>
+
+        </div>
+      </div>
+      <section class="sec-tapas">
+        <nav class="navegador_tapas">
+          <form class="form_tapas">
+            <div class="categorias_tapas">
+              <input type="button" class="categoria_tapas active" value="TODAS" />
+              <input
+                type="button"
+                class="categoria_tapas"
+                value="EDICIÓN IMPRESA"
+              />
+              <input type="button" class="categoria_tapas" value="ESPECIALES" />
+              <input type="button" class="categoria_tapas" value="POLO" />
+            </div>
+            <div class="fecha_slider-container">
+                <div id="slider-date"></div>
+                <div class="rango_fecha-container">
+                    <div class="fecha_inicial">Buscar desde: <span id="event-start"></span></div>
+                    <span> - </span>
+                    <div class="fecha_limite">Hasta: <span  id="event-end"></span></div>
+                    <h4>(mes/año)</h4>
+                </div>
+  
+            </div>
+  
+            <div class="contenedor_busqueda">
+              <input
+                type="text"
+                placeholder="palabra clave (ej: Messi)"
+                  name="palabra_clave"
+                class="input_busqueda_tapas"
+              />
+              <input
+                type="text"
+                placeholder="N° de edición"
+                name="numero_edicion"
+                class="input_busqueda_tapas"
+              />
+              <input type="submit" value="BUSCAR" class="buscar_tapas" />
+            </div>
+          </form>
+        </nav>
+      </section>
+      
+      <script src="scripts.js"></script>
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="listado__main">
+      <h4>se encontraron <strong class="danger">Nresultados</strong></h4>
+      <div class="contenedor-elementos">
+        <div class="contenedor-tapas">
+          <div class="fecha-edicion">
+
+            <h3 class="fecha">25 de mayo 2008</h3>
+
+
+            <div id="edicion">
+              <h3>ED.4378</h3>
+              <label class="subrayado-amarillo tapa" for="edicion"></label>
+            </div>
+          </div>
+          <input type="hidden" id="title" value="Titulo1">
+          <input type="hidden" id="desc" value="descripcion1">
+          <a href="#" id="contenedor-img-tapas">
+            <img class="img"
+              src="https://images.daznservices.com/di/library/GOAL/6c/c6/rafael-santos-borre-river-flamengo-final-copa-libertadores-23112019_f0afq9mucyry1mua5k0lmh9uz.jpg?t=-1642105458&amp;quality=60&amp;w=1200&amp;h=800" />
+
+          </a>
+        </div>
+
+        <div class="contenedor-tapas">
+          <div class="fecha-edicion">
+
+            <h3 class="fecha">fecha</h3>
+
+
+            <div id="edicion">
+              <h3>edicion</h3>
+              <label class="subrayado-amarillo tapa" for="edicion"></label>
+            </div>
+          </div>
+          <input type="hidden" id="title" value="Titulo2">
+          <input type="hidden" id="desc" value="descripcion2">
+          <a href="#" id="contenedor-img-tapas">
+            <img
+              src="https://as01.epimg.net/futbol/imagenes/2021/03/25/internacional/1616692330_390331_1616692880_noticia_normal_recorte1.jpg" />
+
+          </a>
+        </div>
+        <div class="contenedor-tapas">
+          <div class="fecha-edicion">
+
+            <h3 class="fecha">fecha</h3>
+
+
+            <div id="edicion">
+              <h3>edicion</h3>
+              <label class="subrayado-amarillo tapa" for="edicion"></label>
+            </div>
+          </div>
+
+          <input type="hidden" id="title" value="Titulo3">
+          <input type="hidden" id="desc" value="descripcion3">
+
+          <a href="#" id="contenedor-img-tapas">
+            <img src="http://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2019/09/24/15693255707470.jpg" />
+
+          </a>
+        </div>
+        <div class="contenedor-tapas">
+          <div class="fecha-edicion">
+
+            <h3 class="fecha">fecha</h3>
+
+
+            <div id="edicion">
+              <h3>edicion</h3>
+              <label class="subrayado-amarillo tapa" for="edicion"></label>
+            </div>
+          </div>
+
+          <input type="hidden" id="title" value="Titulo4">
+          <input type="hidden" id="desc" value="descripcion4">
+
+          <a id="contenedor-img-tapas">
+            <img
+              src="https://www.infobae.com/new-resizer/qlCahNiCy_SeoFhlaBVC3X5Z8SA=/1200x900/filters:format(jpg):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/AGQVGT3WOFDWLHZEDUDG62QFOM" /><span>
+
+          </a>
+        </div>
+        <div class="contenedor-tapas">
+          <div class="fecha-edicion">
+
+            <h3 class="fecha">fecha</h3>
+
+
+            <div id="edicion">
+              <h3>edicion</h3>
+              <label class="subrayado-amarillo tapa" for="edicion"></label>
+            </div>
+          </div>
+
+          <input type="hidden" id="title" value="Titulo5">
+          <input type="hidden" id="desc" value="descripcion5">
+
+          <a id="contenedor-img-tapas">
+            <img
+              src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /><span>
+
+          </a>
+        </div>
+
+        <div class="contenedor-tapas">
+          <div class="fecha-edicion">
+
+            <h3 class="fecha">fecha</h3>
+
+
+            <div id="edicion">
+              <h3>edicion</h3>
+              <label class="subrayado-amarillo tapa" for="edicion"></label>
+            </div>
+          </div>
+
+          <input type="hidden" id="title" value="Titulo1">
+          <input type="hidden" id="desc" value="descripcion1">
+
+          <a id="contenedor-img-tapas">
+            <img
+              src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /><span>
+
+          </a>
+        </div>
+    </div>
+      <a class="ver-mas">Cargar Mas</a>
+
+   </section>
+
+  </div>
+  
+  <footer class="footer footer_nav_tapas">
+      <div class="footer__top">
+          <div class="footer__logo"> <img src="../images/logo.svg"></div>
+          <div class="footer__menu">
+              <div class="footer__menu-section">
+                  <h3 class="footer__menu-section__title">Fútbol</h3>
+                  <ul class="footer__menu-links">
+                      <li> <a href="#">Loga profesional</a></li>
+                      <li> <a href="#">Ascenso</a></li>
+                      <li> <a href="#">Copa Argentina</a></li>
+                      <li> <a href="#">Internacional</a></li>
+                      <li> <a href="#">Libertadores</a></li>
+                      <li> <a href="#">Sudamericana</a></li>
+                      <li> <a href="#">Eliminatorias</a></li>
+                      <li> <a href="#">Selección</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-section">
+                    <h3 class="footer__menu-section__title">Más deportes</h3>
+                    <ul class="footer__menu-links">
+                        <li> <a href="#">Tenis</a></li>
+                        <li> <a href="#">Polideportivo</a></li>
+                        <li> <a href="#">Opinión</a></li>
+                    </ul>
+        </div>
+        <div class="footer__menu-section">
+            <h3 class="footer__menu-section__title">EG Histórico</h3>
+            <ul class="footer__menu-links">
+                <li> <a href="#">Memoria Emotiva</a></li>
+                <li> <a href="#">Hemeroteca</a></li>
+                <li> <a href="#">Diego</a></li>
+                <li> <a href="#">Navegador de Tapas</a></li>
+            </ul>
+        </div>
+        <div class="footer__menu-section">
+            <h3 class="footer__menu-section__title">MáS</h3>
+          <ul class="footer__menu-links">
+              <li> <a href="#">Venta de fotos</a></li>
+              <li> <a href="#">Preguntas frecuentes</a></li>
+              <li> <a href="#">Contacto</a></li>
+              <li> <a href="#">Privacidad</a></li>
+            </ul>
+        </div>
+    </div>
+    <ul class="footer__social">
+        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li> <a href="#"><i class="fa fa-facebook"> </i></a></li>
+        <li> <a href="#"><i class="fab fa-tiktok"> </i></a></li>
+        <li> <a href="#"><i class="fa fa-youtube-play"></i></a></li>
+    </ul>
+</div>
+<div class="footer__bottom">
+    <p class="footer__copy">&copy; TORNEOS Y COMPETENCIAS S.A. Todos los derechos reservados.</p><a href="https://creatos.com" target="_blank" class="footer__credits"><img src="../images/logo-creatos.png"></a>
+</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="../scripts/main.js"></script>
+<script src="../scripts/range.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+</body>
+</html>

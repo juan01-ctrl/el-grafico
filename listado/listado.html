@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>El Gráfico 2021</title>
+  <meta name="description" content="A new Yeogurt application" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <div class="header__ad">
+    <div class="header__ad__banner">
+      <img src="https://via.placeholder.com/468x60?text=468x60+Full +Banner" />
+    </div>
+  </div>
+  <header class="header">
+    <div class="header__top">
+      <button class="header__hamburguer">
+        <span> </span><span> </span><span></span>
+      </button>
+      <div class="header__logo">
+        <a href="/"><img src="../images/logo.svg" /></a>
+      </div>
+      <div class="header__side">
+        <img src="../images/maradona.png" class="header__maradona" />
+        <ul class="eg-social eg-social--negative">
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                class="svg-inline--fab fa-tiktok fa-w-14 fa-7x">
+                <path fill="currentColor"
+                  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                  class=""></path>
+              </svg></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-facebook"> </i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="header__bottom">
+      <div class="header__info">
+        <p class="header__weather">
+          <i class="material-icons">wb_sunny</i><span class="_temp">32º</span><span class="_location">Buenos Aires, AR
+          </span>
+        </p>
+        <p class="header__date">Jueves 10 de febrero de 2021</p>
+      </div>
+      <button class="header__hamburguer">
+        <span> </span><span> </span><span></span>
+      </button>
+      <button class="header__search"><i class="fa fa-search"></i></button>
+      <ul class="header__main-menu">
+        <li><a href="#">Fútbol</a></li>
+        <li><a href="#">Tenis</a></li>
+        <li><a href="#">Polideportivo</a></li>
+        <li><a href="#">Opinión</a></li>
+        <li><a href="#">EG Histórico</a></li>
+      </ul>
+      <div class="header__internal-menu__wrapper">
+        <!--button.header__internal-menu__close-->
+        <ul class="header__internal-menu">
+          <li class="header__internal-menu__section">
+            Menu de contenidos
+            <ul class="header__internal-menu__links">
+              <li><a href="#">FÚTBOL ARGENTINO</a></li>
+              <li><a href="#">LA JORNADA ESTÁ AQUÍ</a></li>
+              <li><a href="#">CONMEBOL LIBERTADORES</a></li>
+              <li><a href="#">MEMORIA EMOTIVA</a></li>
+              <li><a href="#">¡HABLA MEMORIA</a></li>
+              <li><a href="#">HEMEROTECA</a></li>
+              <li><a href="#">MARADONA Y EL GRÁFICO</a></li>
+              <li><a href="#">JUEGOS OLÍMPICOS</a></li>
+            </ul>
+          </li>
+          <li class="header__internal-menu__section">
+            Fotos
+            <ul class="header__internal-menu__links">
+              <li><a href="#">HEMEROTECA</a></li>
+              <li><a href="#">LAS FOTOS DE EL GRÁFICO</a></li>
+              <li><a href="#">LA TAPA</a></li>
+            </ul>
+          </li>
+          <li class="header__internal-menu__section">
+            Videos
+            <ul class="header__internal-menu__links">
+              <li><a href="#">MEMORIA EMOTIVA</a></li>
+              <li><a href="#">LA JORNADA ESTÁ AQUÍ</a></li>
+              <li><a href="#">FÚTBOL ARGENTINO</a></li>
+            </ul>
+          </li>
+          <li class="header__internal-menu__section">
+            NUESTRA HISTORIA
+            <ul class="header__internal-menu__links">
+              <li><a href="#">NAVEGADOR DE TAPAS</a></li>
+              <li><a href="#">100 años de El Gráfico</a></li>
+            </ul>
+          </li>
+          <li class="header__internal-menu__section">
+            SERVICIOS
+            <ul class="header__internal-menu__links">
+              <li><a href="#">VENTA DE FOTOS</a></li>
+              <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+              <li><a href="#">CONTACTO</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <ul class="escudos">
+    <li class="-expand">
+      <button><span> </span><span></span></button>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/aldosivi.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/argentinos-juniors.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/arsenal.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/atletico-tucuman.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/banfield.jpg" /></a>
+    </li>
+    <li class="-main">
+      <a href="#"><img src="../images/escudos/boca-juniors.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/central-cordoba.jpg" /></a>
+    </li>
+    <li class="-main">
+      <a href="#"><img src="../images/escudos/colon.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/defensa-justicia.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/estudiantes.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/gimnasia.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/godoy-cruz.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/huracan.jpg" /></a>
+    </li>
+    <li class="-main">
+      <a href="#"><img src="../images/escudos/independiente.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/lanus.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/newells.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/patronato.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/platense.jpg" /></a>
+    </li>
+    <li class="-main">
+      <a href="#"><img src="../images/escudos/racing.jpg" /></a>
+    </li>
+    <li class="-main">
+      <a href="#"><img src="../images/escudos/river.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/rosario-central.jpg" /></a>
+    </li>
+    <li class="-main">
+      <a href="#"><img src="../images/escudos/san-lorenzo.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/sarmiento.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/talleres.jpg" /></a>
+    </li>
+    <li>
+      <a href="#"><img src="../images/escudos/union.jpg" /></a>
+    </li>
+    <li class="-main">
+      <a href="#"><img src="../images/escudos/velez.jpg" /></a>
+    </li>
+  </ul>
+  <main class="listado">
+    <section class="listado__heading">
+      <div class="eg-grid">
+        <div class="eg-cell__1-4">
+          <div class="listado__heading__head">
+            <div class="listado__heading__escudo">
+              <img src="../images/escudos/boca-juniors.jpg" />
+            </div>
+            <h1 class="listado__heading__title">
+              Boca Juniors<span></span><span></span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="listado__main">
+      <div class="eg-grid">
+        <div class="eg-cell__1-2 eg-row__1-2">
+          <div class="eg-article eg-article--square">
+            <a href="#" class="eg-article__image"><img
+                src="https://images.daznservices.com/di/library/GOAL/6c/c6/rafael-santos-borre-river-flamengo-final-copa-libertadores-23112019_f0afq9mucyry1mua5k0lmh9uz.jpg?t=-1642105458&amp;quality=60&amp;w=1200&amp;h=800" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  River hizo los deberes y goleó a Patronato
+                </h3>
+                <p class="eg-article__subtitle">
+                  El Millonario se impuso 4-0 en el monumental y avanzó a los
+                  16avos de final de la Copa Argentina
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__3-1 eg-row__1-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/futbol/imagenes/2021/03/25/internacional/1616692330_390331_1616692880_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Champions League</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">Liverpool volvió a festejar</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__4-1 eg-row__1-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="http://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2019/09/24/15693255707470.jpg" /></a><span
+              class="eg-tag">VELEZ</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Velez anuncia la reincorporacion de Almada y Brizuela
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__3-1 eg-row__2-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://www.infobae.com/new-resizer/qlCahNiCy_SeoFhlaBVC3X5Z8SA=/1200x900/filters:format(jpg):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/AGQVGT3WOFDWLHZEDUDG62QFOM" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Boca y Colombia, una historia de amor
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__4-1 eg-row__2-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Beccacece puso en marcha su tercer ciclo en Defensa y
+                  Justicia
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="listado__body">
+      <div class="eg-grid">
+        <div class="eg-cell__1-3">
+          <div class="eg-grid no-padding">
+            <div class="eg-cell__1-2">
+              <div class="eg-article eg-article--square">
+                <a href="#" class="eg-article__image"><img
+                    src="https://as01.epimg.net/futbol/imagenes/2021/03/25/internacional/1616692330_390331_1616692880_noticia_normal_recorte1.jpg" /></a><span
+                  class="eg-tag">Champions League</span><a href="#" class="eg-article__heading">
+                  <div class="eg-article__heading__wrapper">
+                    <h3 class="eg-article__title">
+                      Liverpool volvió a festejar
+                    </h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="eg-cell__3-2">
+              <div class="eg-article eg-article--square">
+                <a href="#" class="eg-article__image"><img
+                    src="http://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2019/09/24/15693255707470.jpg" /></a><span
+                  class="eg-tag">VELEZ</span><a href="#" class="eg-article__heading">
+                  <div class="eg-article__heading__wrapper">
+                    <h3 class="eg-article__title">
+                      Velez anuncia la reincorporacion de Almada y Brizuela
+                    </h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eg-cell__1-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/futbol/imagenes/2021/03/25/internacional/1616692330_390331_1616692880_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Champions League</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">Liverpool volvió a festejar</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__2-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://www.infobae.com/new-resizer/qlCahNiCy_SeoFhlaBVC3X5Z8SA=/1200x900/filters:format(jpg):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/AGQVGT3WOFDWLHZEDUDG62QFOM" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Boca y Colombia, una historia de amor
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__3-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Beccacece puso en marcha su tercer ciclo en Defensa y
+                  Justicia
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__1-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://s.yimg.com/ny/api/res/1.2/FVN6tmCTojzAEz7toaNWkA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM5Ny4xNjMxMjA1NjczNzU4Nw--/https://s.yimg.com/uu/api/res/1.2/PTm7dcKR_0LwyNRZHt.6xw--~B/aD01MjU7dz04NDY7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/pt/lance__99/46e9346d06f7b3146cd18d674562fc8f" /></a><span
+              class="eg-tag">Brasileirao</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Crespo ya esta en su nueva casa
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__2-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://assets-es.imgfoot.com/media/cache/642x382/kylian-mbappe-goal.jpg" /></a><span
+              class="eg-tag">Champions League</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Mbappe destrozó al Barcelona y lo dejó al borde del abismo
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__1-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Beccacece puso en marcha su tercer ciclo en Defensa y
+                  Justicia
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__2-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://media.tycsports.com/files/2021/02/16/178881/aldosivi_862x485.jpg?v=1" /></a><span
+              class="eg-tag">Aldosivi</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Aldosivi sumo a los hermanos insua
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__3-1 eg-row__3-2">
+          <a href="#" class="volanta">
+            <div class="volanta__image">
+              <img src="https://pbs.twimg.com/media/EdKEYPvXoAAGJvV.jpg" />
+            </div>
+            <div class="volanta__content">
+              <span class="eg-tag">volanta</span>
+              <h3 class="_title">DIEGO</h3>
+              <p class="_subtitle">Esta es una bajada corta de texto</p>
+            </div>
+          </a>
+        </div>
+        <div class="eg-cell__1-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/futbol/imagenes/2021/03/25/internacional/1616692330_390331_1616692880_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Champions League</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">Liverpool volvió a festejar</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__2-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://www.infobae.com/new-resizer/qlCahNiCy_SeoFhlaBVC3X5Z8SA=/1200x900/filters:format(jpg):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/AGQVGT3WOFDWLHZEDUDG62QFOM" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Boca y Colombia, una historia de amor
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__3-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Beccacece puso en marcha su tercer ciclo en Defensa y
+                  Justicia
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__4-1 eg-row__1-5">
+          <div class="eg-ad__300x250">
+            <img src="https://via.placeholder.com/300x250?text=300x250+Banner+Ad" alt="" />
+          </div>
+          <div class="eg-pos-table">
+            <div class="eg-pos-table__heading">
+              <h2 class="eg-pos-table__title">Posiciones</h2>
+              <a href="#">+ Estadísticas </a>
+            </div>
+            <div class="eg-pos-table__selector">
+              <select class="eg-pos-table__select">
+                <option value="premier" selected="selected">
+                  Premier League
+                </option>
+                <option value="la-liga">La Liga</option>
+              </select>
+            </div>
+            <div class="eg-pos-table__data">
+              <img src="../images/tablePos-widget.jpg" />
+            </div>
+          </div>
+          <div class="eg-ad__300x600">
+            <img src="https://via.placeholder.com/300x600?text=300x600+Skyscrapper+Ad" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="listado__secondary">
+      <div class="eg-grid">
+        <div class="eg-cell__1-2 eg-row__1-2">
+          <div class="eg-article eg-article--square">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/futbol/imagenes/2021/03/25/internacional/1616692330_390331_1616692880_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Champions League</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">Liverpool volvió a festejar</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__3-1 eg-row__1-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://www.infobae.com/new-resizer/qlCahNiCy_SeoFhlaBVC3X5Z8SA=/1200x900/filters:format(jpg):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/AGQVGT3WOFDWLHZEDUDG62QFOM" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Boca y Colombia, una historia de amor
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__3-1 eg-row__2-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Beccacece puso en marcha su tercer ciclo en Defensa y
+                  Justicia
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__1-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/futbol/imagenes/2021/03/25/internacional/1616692330_390331_1616692880_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Champions League</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">Liverpool volvió a festejar</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__2-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://www.infobae.com/new-resizer/qlCahNiCy_SeoFhlaBVC3X5Z8SA=/1200x900/filters:format(jpg):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/AGQVGT3WOFDWLHZEDUDG62QFOM" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Boca y Colombia, una historia de amor
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__3-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Beccacece puso en marcha su tercer ciclo en Defensa y
+                  Justicia
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__4-1 eg-row__1-3">
+          <a href="#" class="opinion">
+            <div class="opinion__tag">Opinion</div>
+            <h3 class="opinion__title">
+              Riquelme no entra dentro de los primeros 10
+            </h3>
+            <div class="opinion__image">
+              <img src="../images/opinion.jpg" />
+            </div>
+          </a>
+          <div class="textual">
+            <div class="textual__tag">Textual</div>
+            <h3 class="textual__title">
+              Mientras todos están de vacaciones, nosotros jugamos otra final
+            </h3>
+            <p class="textual__author">Miguel Angel Russo</p>
+            <div class="textual__image">
+              <img src="http://www.telam.com.ar/advf/imagenes/2020/01/5e2b189fbc2d5_1004x565.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="listado__infinite">
+      <div class="eg-grid">
+        <div class="eg-cell__1-3">
+          <div class="eg-ad__728x90">
+            <img src="https://via.placeholder.com/728x90?text=728x90+Full+banner+Ad" alt="" />
+          </div>
+        </div>
+        <div class="eg-cell__1-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/futbol/imagenes/2021/03/25/internacional/1616692330_390331_1616692880_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Champions League</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">Liverpool volvió a festejar</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__2-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://www.infobae.com/new-resizer/qlCahNiCy_SeoFhlaBVC3X5Z8SA=/1200x900/filters:format(jpg):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/AGQVGT3WOFDWLHZEDUDG62QFOM" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Boca y Colombia, una historia de amor
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__3-1">
+          <div class="eg-article">
+            <a href="#" class="eg-article__image"><img
+                src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /></a><span
+              class="eg-tag">Liga Argentina</span><a href="#" class="eg-article__heading">
+              <div class="eg-article__heading__wrapper">
+                <h3 class="eg-article__title">
+                  Beccacece puso en marcha su tercer ciclo en Defensa y
+                  Justicia
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eg-cell__1-3 text-center">
+          <button class="listado__load">Cargar Más</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__logo"><img src="../images/logo.svg" /></div>
+      <div class="footer__menu">
+        <div class="footer__menu-section">
+          <h3 class="footer__menu-section__title">Fútbol</h3>
+          <ul class="footer__menu-links">
+            <li><a href="#">Loga profesional</a></li>
+            <li><a href="#">Ascenso</a></li>
+            <li><a href="#">Copa Argentina</a></li>
+            <li><a href="#">Internacional</a></li>
+            <li><a href="#">Libertadores</a></li>
+            <li><a href="#">Sudamericana</a></li>
+            <li><a href="#">Eliminatorias</a></li>
+            <li><a href="#">Selección</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu-section">
+          <h3 class="footer__menu-section__title">Más deportes</h3>
+          <ul class="footer__menu-links">
+            <li><a href="#">Tenis</a></li>
+            <li><a href="#">Polideportivo</a></li>
+            <li><a href="#">Opinión</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu-section">
+          <h3 class="footer__menu-section__title">EG Histórico</h3>
+          <ul class="footer__menu-links">
+            <li><a href="#">Memoria Emotiva</a></li>
+            <li><a href="#">Hemeroteca</a></li>
+            <li><a href="#">Diego</a></li>
+            <li><a href="#">Navegador de Tapas</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu-section">
+          <h3 class="footer__menu-section__title">MáS</h3>
+          <ul class="footer__menu-links">
+            <li><a href="#">Venta de fotos</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="eg-social eg-social--negative">
+        <li>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tiktok" role="img"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fab fa-tiktok fa-w-14 fa-7x">
+              <path fill="currentColor"
+                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                class=""></path>
+            </svg></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-facebook"> </i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-youtube-play"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        &copy; TORNEOS Y COMPETENCIAS S.A. Todos los derechos reservados.
+      </p>
+      <a href="https://creatos.com" target="_blank" class="footer__credits"><img src="../images/logo-creatos.png" /></a>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="../scripts/main.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>

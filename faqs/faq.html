@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Gráfico 2021</title>
+    <meta name="description" content="A new Yeogurt application" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <button class="header__hamburguer">
+          <span> </span><span> </span><span></span>
+        </button>
+        <div class="header__logo">
+          <a href="/"><img src="../images/logo.svg" /></a>
+        </div>
+        <div class="header__side">
+          <img src="../images/maradona.png" class="header__maradona" />
+          <ul class="eg-social eg-social--negative">
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="tiktok"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="svg-inline--fab fa-tiktok fa-w-14 fa-7x"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                    class=""
+                  ></path></svg></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-facebook"> </i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="header__bottom">
+        <div class="header__info">
+          <p class="header__weather">
+            <i class="material-icons">wb_sunny</i><span class="_temp">32º</span
+            ><span class="_location">Buenos Aires, AR </span>
+          </p>
+          <p class="header__date">Jueves 10 de febrero de 2021</p>
+        </div>
+        <button class="header__hamburguer">
+          <span> </span><span> </span><span></span>
+        </button>
+        <button class="header__search"><i class="fa fa-search"></i></button>
+        <ul class="header__main-menu">
+          <li><a href="#">Fútbol</a></li>
+          <li><a href="#">Tenis</a></li>
+          <li><a href="#">Polideportivo</a></li>
+          <li><a href="#">Opinión</a></li>
+          <li><a href="#">EG Histórico</a></li>
+        </ul>
+        <div class="header__internal-menu__wrapper">
+          <!--button.header__internal-menu__close-->
+          <ul class="header__internal-menu">
+            <li class="header__internal-menu__section">
+              Menu de contenidos
+              <ul class="header__internal-menu__links">
+                <li><a href="#">FÚTBOL ARGENTINO</a></li>
+                <li><a href="#">LA JORNADA ESTÁ AQUÍ</a></li>
+                <li><a href="#">CONMEBOL LIBERTADORES</a></li>
+                <li><a href="#">MEMORIA EMOTIVA</a></li>
+                <li><a href="#">¡HABLA MEMORIA</a></li>
+                <li><a href="#">HEMEROTECA</a></li>
+                <li><a href="#">MARADONA Y EL GRÁFICO</a></li>
+                <li><a href="#">JUEGOS OLÍMPICOS</a></li>
+              </ul>
+            </li>
+            <li class="header__internal-menu__section">
+              Fotos
+              <ul class="header__internal-menu__links">
+                <li><a href="#">HEMEROTECA</a></li>
+                <li><a href="#">LAS FOTOS DE EL GRÁFICO</a></li>
+                <li><a href="#">LA TAPA</a></li>
+              </ul>
+            </li>
+            <li class="header__internal-menu__section">
+              Videos
+              <ul class="header__internal-menu__links">
+                <li><a href="#">MEMORIA EMOTIVA</a></li>
+                <li><a href="#">LA JORNADA ESTÁ AQUÍ</a></li>
+                <li><a href="#">FÚTBOL ARGENTINO</a></li>
+              </ul>
+            </li>
+            <li class="header__internal-menu__section">
+              NUESTRA HISTORIA
+              <ul class="header__internal-menu__links">
+                <li><a href="#">NAVEGADOR DE TAPAS</a></li>
+                <li><a href="#">100 años de El Gráfico</a></li>
+              </ul>
+            </li>
+            <li class="header__internal-menu__section">
+              SERVICIOS
+              <ul class="header__internal-menu__links">
+                <li><a href="#">VENTA DE FOTOS</a></li>
+                <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+                <li><a href="#">CONTACTO</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main_faq">
+      <div class="contenedor-medio">
+        <div class="contenedor-titulo">
+          <div class="titulo-princ-am">
+            <h1>Preguntas Frecuentes</h1>
+            <label class="subrayado-amarillo title faq"></label>
+          </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse1"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Historia
+              </button>
+            </h2>
+            <div
+              id="collapse1"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong class="danger">¿Cuándo se fundó El Gráfico?</strong>
+                <br />
+                El Gráfico fue fundado el 30 de mayo de 1919 por Constancio C.
+                Vigil.
+                <br />
+                <strong class="danger">
+                  Quiero conocer más sobre la historia de El Gráfico. ¿Dónde
+                  puedo consultar?
+                </strong>
+                <br />
+
+                En 2009, en ocasión del 90º aniversario, El Gráfico presentó dos
+                micrositios. En "Grandes Coberturas" aparecen 90 hechos
+                destacados y la cobertura que tuvieron en la revista. Y en
+                "Memoria El Gráfico" revivimos personajes, anécdotas, todos los
+                logos, joyas del archivo, periodistas y fotógrafos ilustres en
+                la historia de la revista y también el ranking de tapas más
+                valoradas por nuestros usuarios.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Archivos
+              </button>
+            </h2>
+            <div
+              id="collapse2"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong class="danger"
+                  >¿El archivo de El Gráfico está disponible para consulta de
+                  material antiguo?</strong
+                >
+                <br />
+                No, el archivo de El Gráfico no está abierto al público y
+                tampoco entrega material fotocopiado. A los interesados en
+                recopilar notas e información aparecida en la revista les
+                recomendamos dirigirse a la Biblioteca Nacional donde tienen la
+                colección completa de El Gráfico. <br />
+                <strong class="danger"
+                  >Quiero conocer más sobre la historia de El Gráfico. ¿Dónde
+                  puedo consultar?</strong
+                >
+                <br />
+                La mayoría del material de archivo está en sobres con recortes y
+                fotos en papel. También hay otro sector de diapositivas y
+                negativos. La colección de El Gráfico está encuadernada por
+                tomos y no es digital. Por tal motivo, el manejo de dicho
+                material es altamente sensible y debe hacerse con el mayor
+                cuidado posible para evitar su deterioro. En el tiempo en que
+                estuvo abierto al público, se dieron muchos casos de páginas
+                arrancadas y material robado que obligaron a restringir el
+                acceso para preservar la única colección existente. Juan
+                Arcidiacono, nuestro jefe de archivo, se encarga de mantener el
+                material en las mejores condiciones posibles para el uso
+                periodístico. <br />
+                <br />
+                <strong class="danger"
+                  >Necesito encontrar una tapa que recuerdo. ¿Cómo hago?</strong
+                >
+                <br />
+                En 2009, para celebrar su 90º aniversario, El Gráfico presentó
+                un completo navegador de tapas, que incluye también el buscador
+                de ediciones especiales, disponible para todos los usuarios.
+                Allí se puede limitar la búsqueda por tema, por fecha exacta o
+                aproximada, por número de edición y por personaje. Todas las
+                tapas se pueden ampliar e imprimir. <br />
+                <br />
+                <strong class="danger"
+                  >¿Hay posibilidades de encontrar cuándo salió publicada una
+                  nota que recuerdo?</strong
+                >
+                <br />
+
+                En el navegador de tapas aparecen los sumarios completos a
+                partir de noviembre de 2006. Aún no disponemos del servicio
+                online para búsquedas anteriores a dicha fecha. <br />
+                <br />
+
+                <strong class="danger"
+                  >Un familiar mío salió en las páginas de El Gráfico pero no
+                  tengo información precisa de la fecha. ¿Puedo conseguir más
+                  información?</strong
+                ><br />
+
+                Lamentablemente, esas búsquedas requieren un tiempo de
+                dedicación exclusiva que El Gráfico no está en condiciones de
+                brindar, debido a la gran cantidad de pedidos personales que se
+                reciben, cada uno de ellos de legítimo interés y no mensurable
+                con el resto. Para búsqueda de dicho material, les recomendamos
+                visitar la Biblioteca Nacional o la Biblioteca del Congreso,
+                donde tienen la colección completa de El Gráfico. <br />
+                <br />
+
+                <strong class="danger"
+                  >¿Dónde encuentro la Biblioteca Nacional y la del
+                  Congreso?</strong
+                ><br />
+
+                La Biblioteca Nacional está en Aguero 2502, Ciudad de Buenos
+                Aires, y el teléfono es el 4808-6000. Allí le informarán los
+                horarios de visita, de lunes a viernes. La Biblioteca del
+                Congreso se encuentra en Hipólito Yrigoyen 1750, teléfono
+                4010-3000 interno 8014. Se consulta de lunes a viernes en el
+                horario de 8 a 23 y sábados y domingos en horario a confirmar.
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                El Gráfico en internet
+              </button>
+            </h2>
+            <div
+              id="collapse3"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong class="danger"
+                  >¿Cuál es la dirección de El Gráfico en la web?</strong
+                >
+                <br />
+                La dirección es
+                <a class="danger" href="www.elgrafico.com.ar" target="_blank"
+                  >elgrafico.com.ar</a
+                ><br /><br />
+
+                <strong class="danger">¿El Gráfico está en facebook?</strong>
+                <br />
+                Sí, fue el primer medio argentino en sumarse a esta red social.
+                Link directo:<a
+                  class="danger"
+                  href="https://www.facebook.com/elgraficoweb"
+                  target="_blank"
+                  >facebook.com/elgraficoweb.</a
+                ><br /><br />
+
+                <strong class="danger"
+                  >¿Qué puedo hacer en los perfiles de Twitter y
+                  Facebook?</strong
+                >
+                <br />
+                Participar en diversas consignas, concursos y estar en contacto
+                con otros usuarios, lectores y admiradores. Comentar notas y
+                noticias.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse4"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Franquicias
+              </button>
+            </h2>
+            <div
+              id="collapse4"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong class="danger"
+                  >¿Hay ediciones regionales o locales de El Gráfico fuera de la
+                  Argentina?
+                </strong>
+                <br />
+                Sí, El Gráfico tiene diversas franquicias que le permiten
+                aparecer en Perú, Chile, Costa Rica, con contenidos locales y de
+                la edición argentina. Para reconocer si un producto pertenece a
+                la familia de El Gráfico, basta comprobar que el logo sea el
+                mismo de El Gráfico. <br />
+                <br />
+
+                <strong class="danger"
+                  >Estoy interesado en adquirir la franquicia de El Gráfico para
+                  mi país. ¿Con quién me debo contactar?
+                </strong>
+                <br />
+                Para consultas sobre franquicias, le rogamos contactar al
+                teléfono +5411-5235-4800. <br />
+                <br />
+
+                <strong class="danger"
+                  >¿El Gráfico de El Salvador tiene algo que ver con la revista
+                  El Gráfico?
+                </strong>
+                <br />
+                No. El Gráfico de El Salvador es un diario de ese país y fue
+                fundado en 2004, apenas 85 años después del nacimiento de la
+                revista El Gráfico. <br />
+                <br />
+
+                <strong class="danger"
+                  >¿El Gráfico de El Salvador tiene algo que ver con la revista
+                  El Gráfico?
+                </strong>
+                <br />
+                No. Es un diario perteneciente al periódico El Universal. <br />
+                <br />
+
+                <strong class="danger">¿Qué es El Gráfico Chile?</strong> <br />
+                El Gráfico Chile es una franquicia oficial de la marca El
+                Gráfico que se diseña, edita y vende en Chile, y que tiene
+                contenido propio del deporte chileno, más algunas notas de la
+                edición internacional de El Gráfico que se hace en la Argentina.
+                Su sitio en Internet es
+                <a href="http://www.elgrafico.cl/" class="danger">
+                  http://www.elgrafico.cl/</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse5"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Venta de fotos
+              </button>
+            </h2>
+            <div
+              id="collapse5"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong class="danger">¿Cómo hago para comprar fotos?</strong>
+                <br />
+                Ingresando su pedido a través del
+                <a
+                  href="https://www.elgrafico.com.ar/cliente/venta-de-fotos"
+                  target="_blank"
+                  class="danger"
+                  >formulario de venta de fotos</a
+                >, indicando el tipo de material buscado y el medio en el que se
+                publicará. Hay material que ya está digitalizado y otro que
+                requiere localizarse y digitalizarse. Todas las fotos serán
+                entregadas en soporte digital en alta definición.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse6"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                CVs y Sumarios
+              </button>
+            </h2>
+            <div
+              id="collapse6"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong class="danger"
+                  >¿A qué dirección puedo enviar mi CV?</strong
+                >
+                <br />
+                Los interesados en enviar un Curriculum Vitae pueden escribir a
+                , detallando en el asunto "CV". El mensaje será reenviado al
+                Departamento de Recursos Humanos. La recepción de dicho mensaje
+                no implica compromiso alguno de contacto ni presupone una
+                comunicación futura. <br />
+                <br />
+
+                <strong class="danger"
+                  >¿Puedo enviar sumarios de notas a El Gráfico?</strong
+                ><br />
+                El Gráfico tiene un grupo fijo de colaboradores y actualmente no
+                recibe sumarios de periodistas freelance vía web. El Gráfico no
+                se hace responsable ni se compromete a enviar una respuesta a
+                todo material recibido que no haya sido solicitado previamente
+                por un integrante de la redacción de El Gráfico.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse7"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Contacto
+              </button>
+            </h2>
+            <div
+              id="collapse7"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading7"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong class="danger"
+                  >Me interesa contactar a El Gráfico. </strong
+                ><br />
+                Para comunicarse con la redacción de la revista y el sitio web
+                puede utilizar el
+                <a
+                  href="https://www.elgrafico.com.ar/cliente/contacto"
+                  target="_blank"
+                  class="danger"
+                >
+                  formulario de contacto.</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse8"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Newsletter
+              </button>
+            </h2>
+            <div
+              id="collapse8"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong class="danger"
+                  >¿Cómo hago para suscribirme al newsletter de El Gráfico? </strong
+                ><br />
+
+                <div class="form-contact">
+                  <strong class="danger">Suscripción al newsletter</strong
+                  ><br />
+                  <ul class="redes-soc">
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="../images/redes/facebook.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="../images/redes/instagram.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="../images/redes/tik-tok.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="../images/redes/twitter.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="../images/redes/youtube.png" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+                <form class="suscribe_box">
+                  <label class=""
+                    >Recibí todas las semanas contenidos exclusivos</label
+                  >
+                  <div class="form-floating mb-3 w-35">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInput"
+                      value="name@example.com"
+                      required
+                    />
+                    <label for="floatingInput">email</label>
+                  </div>
+                  <div class="form-check w-75">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Acepto las
+                      <strong class="danger">políticas del sitio</strong>
+                    </label>
+                  </div>
+                  <button class="btn btn-secondary" type="button">
+                    Enviar
+                  </button>
+                </form>
+                <strong class="danger"
+                  >¿En qué consiste el newsletter de El Gráfico?</strong
+                ><br />
+                Se les avisa a los usuarios que una nueva edición de El Gráfico
+                está en la calle. También les llegan novedades referentes al
+                sitio, concursos y participación. <br />
+                <br />
+                <strong class="danger"
+                  >¿Si me suscribo al newsletter, recibiré mensajes de terceros,
+                  promociones o publicidad?</strong
+                ><br />
+                No, absolutamente no. El newsletter de El Gráfico envía sólo
+                actualizaciones propias de la revista y el sitio web. Los datos
+                son tratados con absoluta privacidad y no se les ceden a otras
+                empresas.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse9"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Videos y DVDs
+              </button>
+            </h2>
+            <div
+              id="collapse9"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong class="danger"
+                  >Quiero conseguir algunos de los videos VHS que aparecieron en
+                  El Gráfico semanal. ¿Están a la venta?</strong
+                ><br />
+                No, El Gráfico no dispone de dicho material. <br />
+                <br />
+
+                <strong class="danger"
+                  >Me interesa conseguir alguno de los DVD publicados por El
+                  Gráfico. ¿Están a la venta?</strong
+                ><br />
+                No, las ediciones con DVD incluido (Palermo, Fangio, Guillermo
+                Barros Schelotto, Estudiantes campeón 2006) están agotadas.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__logo"><img src="../images/logo.svg" /></div>
+        <div class="footer__menu">
+          <div class="footer__menu-section">
+            <h3 class="footer__menu-section__title">Fútbol</h3>
+            <ul class="footer__menu-links">
+              <li><a href="#">Loga profesional</a></li>
+              <li><a href="#">Ascenso</a></li>
+              <li><a href="#">Copa Argentina</a></li>
+              <li><a href="#">Internacional</a></li>
+              <li><a href="#">Libertadores</a></li>
+              <li><a href="#">Sudamericana</a></li>
+              <li><a href="#">Eliminatorias</a></li>
+              <li><a href="#">Selección</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-section">
+            <h3 class="footer__menu-section__title">Más deportes</h3>
+            <ul class="footer__menu-links">
+              <li><a href="#">Tenis</a></li>
+              <li><a href="#">Polideportivo</a></li>
+              <li><a href="#">Opinión</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-section">
+            <h3 class="footer__menu-section__title">EG Histórico</h3>
+            <ul class="footer__menu-links">
+              <li><a href="#">Memoria Emotiva</a></li>
+              <li><a href="#">Hemeroteca</a></li>
+              <li><a href="#">Diego</a></li>
+              <li><a href="#">Navegador de Tapas</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-section">
+            <h3 class="footer__menu-section__title">MáS</h3>
+            <ul class="footer__menu-links">
+              <li><a href="#">Venta de fotos</a></li>
+              <li><a href="#">Preguntas frecuentes</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Privacidad</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="eg-social eg-social--negative">
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="tiktok"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="svg-inline--fab fa-tiktok fa-w-14 fa-7x"
+              >
+                <path
+                  fill="currentColor"
+                  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                  class=""
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-facebook"> </i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; TORNEOS Y COMPETENCIAS S.A. Todos los derechos reservados.
+        </p>
+        <a href="https://creatos.com" target="_blank" class="footer__credits"
+          ><img src="../images/logo-creatos.png"
+        /></a>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
