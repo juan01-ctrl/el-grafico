@@ -42,9 +42,7 @@
 .gallery-thumbs .swiper-slide-active, .gallery-thumbs1 .swiper-slide-active{
   opacity: 1;
 }
-.gallery-thumbs .swiper-slide img,.gallery-thumbs1 .swiper-slide img{
-  height: 100%;
-}
+
 
 .gallery-photos.none,.gallery-videos.none{
   display: none;
@@ -64,3 +62,4 @@
 .swiper-button-next, .swiper-button-prev{
   color: #fff;
 }
+
