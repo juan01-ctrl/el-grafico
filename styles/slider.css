@@ -46,7 +46,7 @@
   height: 100%;
 }
 
-.gallery.none,.gallery1.none{
+.gallery-photos.none,.gallery-videos.none{
   display: none;
 }
 .gallery-thumbs iframe,.gallery-thumbs1 iframe{

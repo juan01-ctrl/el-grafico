@@ -214,6 +214,7 @@
                   <button data-for="videos" class="eg-gallery__nav-button js-active nav_gallery-videos">Videos</button>
                   <button data-for="fotos" class="eg-gallery__nav-button nav_gallery-photos">Fotos</button>
                 </div>
+                <div class="gallery-videos">
                 <div class="gallery">                
                   <div class="swiper-container gallery-slider">
                       <div class="swiper-wrapper">
@@ -275,7 +276,9 @@
                       </div>
                   </div>
               </div>
-              <div class="gallery1 none">                
+            </div>
+            <div class="gallery-photos none">
+              <div class="gallery1">                
                   <div class="swiper-container gallery-slider1">
                       <div class="swiper-wrapper">
                           <div class="swiper-slide"><div class="eg-gallery__media-item"><img src="https://img.youtube.com/vi/FUtyXo8SQP4/0.jpg"/>
@@ -305,13 +308,13 @@
                           <div class="swiper-slide"><img src="https://img.youtube.com/vi/Uo7XeG2li_c/0.jpg"/></div>
                       </div>
                   </div>
-              </div>
+              </div></div>
 </div>
                 <!-- <div class="eg-gallery"> 
                   <div class="eg-gallery__nav">
                     <button data-for="videos" class="eg-gallery__nav-button js-active">Videos</button>
                     <button data-for="fotos" class="eg-gallery__nav-button">Fotos</button>
-                  </div>
+  `                </div>
                   <div data-media="videos" class="eg-gallery__container js-active">
                     <div class="eg-gallery__media-container">
                       <div class="eg-gallery__media">
@@ -607,7 +610,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <!-- Swiper JS -->
-    <script src="../scripts/slider.js"></script>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
 
     <script>
@@ -620,6 +623,9 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    observer: true,
+observeParents: true,
+
 });
 
 var thumbs = new Swiper ('.gallery-thumbs', {
@@ -628,6 +634,8 @@ var thumbs = new Swiper ('.gallery-thumbs', {
     centeredSlides: true,
     loop: true,
     slideToClickedSlide: true,
+    observer: true,
+observeParents: true,
 });
 
 
@@ -647,6 +655,8 @@ var slider1 = new Swiper ('.gallery-slider1', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    observer: true,
+observeParents: true,
 });
 
 
@@ -656,6 +666,8 @@ var thumbs1 = new Swiper ('.gallery-thumbs1', {
     centeredSlides: true,
     loop: true,
     slideToClickedSlide: true,
+    observer: true,
+observeParents: true,
 });
 
 
@@ -664,6 +676,8 @@ slider1.controller.control = thumbs1;
 thumbs1.controller.control = slider1;
     </script>
 
+
+<script src="../scripts/slider.js"></script>
 <!-- main js -->
   <script src="../scripts/main.js"></script>
   <!-- // -->
