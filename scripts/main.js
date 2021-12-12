@@ -2,6 +2,26 @@
 'use strict';
 
 
+const imgFile = document.getElementById("img1")
+function ImageSetter(input,target) {
+  if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      
+      reader.onload = function (e) {
+          target.attr('src', e.target.result);
+      }
+      
+      reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#imgInp").change(function(){
+  imgFile.classList.remove("none")
+var imgDiv=$(this).data('id');  
+     imgDiv=$('#' + imgDiv);    
+  ImageSetter(this,imgDiv);
+});
+
 // Constructor
 var Header = function() {
   var header = $('.header');
@@ -511,3 +531,11 @@ formTapas.addEventListener("submit",(e)=>{
   },{"../_modules/header/header":1,"../_modules/slider/slider":2}]},{},[3])
   
   //# sourceMappingURL=main.js.map
+
+
+
+
+
+
+
+

@@ -16308,3 +16308,14 @@ input[type="range"]:active::-webkit-slider-thumb{
 /*# sourceMappingURL=main.css.map */ol, ul{
   padding-left:0;
 }
+
+#img1{
+  display:block;
+  margin:1rem auto;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px -3px rgba(0,0,0,0.75);
+
+}
+#img1.none{
+  display:none;
+}
