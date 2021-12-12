@@ -16321,5 +16321,19 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 
 a{
-  cursor:pointer;
+ cursor:pointer;
+}
+
+/*  */
+.eg-cell__1-3.slider_sec{
+  background-color:#001122;
+  padding:1rem 1rem 0 1rem;
+  border-radius:12px;
+  margin-bottom:3rem;
+}
+.gallery-thumbs,.gallery-thumbs1{
+  background-color:#001122;
+  display:flex;
+  align-items:center;
+  padding: 1rem 0 !important;
 }
