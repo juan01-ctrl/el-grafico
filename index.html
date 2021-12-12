@@ -6,7 +6,9 @@
   <meta name="description" content="A new Yeogurt application">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.js" integrity="sha512-g3FJPwAwaXCWh7vnq0+Jq2v2eB2DuELCYRJ7xi7yIPCYM6SdYNxAWZCBKhl9ZyysWHEWie3q0VUcnxTyoCsT7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.js" integrity="sha512-g3FJPwAwaXCWh7vnq0+Jq2v2eB2DuELCYRJ7xi7yIPCYM6SdYNxAWZCBKhl9ZyysWHEWie3q0VUcnxTyoCsT7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.js" integrity="sha512-7i2V4phHspcYYpLujbQU0Ur1NjN6h0oWic1YVo8V1gLtBzOziltT3XX/5XaAmhbvtx3QjyANL/MIyuTpXh/Ndw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.css" integrity="sha512-MKxcSu/LDtbIYHBNAWUQwfB3iVoG9xeMCm32QV5hZ/9lFaQZJVaXfz9aFa0IZExWzCpm7OWvp9zq9gVip/nLMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
@@ -557,48 +559,48 @@
       </div>
     </div>
     <!-- navegador de tapas -->
-  <section class="sec-tapas">
-    <nav class="navegador_tapas">
-      <form class="form_tapas">
-        <div class="categorias_tapas">
-          <input type="button" class="categoria_tapas active" value="TODAS" />
-          <input
-            type="button"
-            class="categoria_tapas"
-            value="EDICIÓN IMPRESA"
-          />
-          <input type="button" class="categoria_tapas" value="ESPECIALES" />
-          <input type="button" class="categoria_tapas" value="POLO" />
-        </div>
-        <div class="fecha_slider-container">
-            <div id="slider-date"></div>
-            <div class="rango_fecha-container">
-              <div class="fecha_inicial">Buscar desde: <span id="event-start"></span></div>
-              <span> - </span>
-              <div class="fecha_limite">Hasta: <span  id="event-end"></span></div>
-              <h4>(mes/año)</h4>
-            </div>
+    <section class="sec-tapas">
+      <nav class="navegador_tapas">
+        <form class="form_tapas">
+          <div class="categorias_tapas">
+            <input type="button" class="categoria_tapas active" value="TODAS" />
+            <input
+              type="button"
+              class="categoria_tapas"
+              value="EDICIÓN IMPRESA"
+            />
+            <input type="button" class="categoria_tapas" value="ESPECIALES" />
+            <input type="button" class="categoria_tapas" value="POLO" />
+          </div>
+          <div class="fecha_slider-container">
+              <div id="slider-date"></div>
+              <div class="rango_fecha-container">
+                  <div class="fecha_inicial">Buscar desde: <span id="event-start"></span></div>
+                  <span> - </span>
+                  <div class="fecha_limite">Hasta: <span  id="event-end"></span></div>
+                  <h4>(mes/año)</h4>
+              </div>
 
-        </div>
+          </div>
 
-        <div class="contenedor_busqueda">
-          <input
-            type="text"
-            placeholder="palabra clave (ej: Messi)"
-              name="palabra_clave"
-            class="input_busqueda_tapas"
-          />
-          <input
-            type="text"
-            placeholder="N° de edición"
-            name="numero_edicion"
-            class="input_busqueda_tapas"
-          />
-          <input type="submit" value="BUSCAR" class="buscar_tapas" />
-        </div>
-      </form>
-    </nav>
-  </section>
+          <div class="contenedor_busqueda">
+            <input
+              type="text"
+              placeholder="palabra clave (ej: Messi)"
+                name="palabra_clave"
+              class="input_busqueda_tapas"
+            />
+            <input
+              type="text"
+              placeholder="N° de edición"
+              name="numero_edicion"
+              class="input_busqueda_tapas"
+            />
+            <input type="submit" value="BUSCAR" class="buscar_tapas" />
+          </div>
+        </form>
+      </nav>
+    </section>
   
   <!-- <script src="../tapas/scripts.js"></script> -->
   </main>
@@ -660,7 +662,6 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.js" integrity="sha512-7i2V4phHspcYYpLujbQU0Ur1NjN6h0oWic1YVo8V1gLtBzOziltT3XX/5XaAmhbvtx3QjyANL/MIyuTpXh/Ndw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.css" integrity="sha512-MKxcSu/LDtbIYHBNAWUQwfB3iVoG9xeMCm32QV5hZ/9lFaQZJVaXfz9aFa0IZExWzCpm7OWvp9zq9gVip/nLMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="./scripts/main.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
   <script>new WOW().init();</script>
