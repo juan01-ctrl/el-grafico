@@ -239,7 +239,7 @@ noUiSlider.create(dateSlider, {
 
     step: 7 * 24 * 60 * 60 * 1000,
 
-    start: [timestamp('2006'), timestamp('2014')],
+    start: [timestamp('1940'), timestamp('200')],
 
 
     format:wNumb({
@@ -258,13 +258,12 @@ var formatter = new Intl.DateTimeFormat('en-GB', {
 });
 
 dateSlider.noUiSlider.on('update', function (values, handle) {
- const fecha = new Date(+values[handle]) 
- // dateValues[handle].innerHTML =formatter.format(new Date(+values[handle]));
- let date =  formatter.format(new Date(+values[handle]));
-
-dateValues[handle].innerHTML = fecha.getDate(date) + "/" + (fecha.getMonth(date)+1) + "/" + fecha.getFullYear(date)
-});
-
+  const fecha = new Date(+values[handle]) 
+  // dateValues[handle].innerHTML =formatter.format(new Date(+values[handle]));
+  let date =  formatter.format(new Date(+values[handle]));
+ 
+ dateValues[handle].innerHTML = (fecha.getMonth(date)+1) + "/" + fecha.getFullYear(date)
+ });
 
 
 
