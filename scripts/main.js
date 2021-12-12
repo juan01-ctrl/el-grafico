@@ -220,65 +220,65 @@ $(function() {
 //# sourceMappingURL=main.js.map
 
 // Navegador de tapas
-const formTapas = document.querySelector(".form_tapas")
-const categorias = document.querySelector(".categorias_tapas")
-const categoriaBtn = [...document.querySelectorAll(".categoria_tapas")]
+// const formTapas = document.querySelector(".form_tapas")
+// const categorias = document.querySelector(".categorias_tapas")
+// const categoriaBtn = [...document.querySelectorAll(".categoria_tapas")]
 
 
-const dateSlider = document.getElementById('slider-date');
+// const dateSlider = document.getElementById('slider-date');
 
-function timestamp(str) {
-    return new Date(str).getTime();
-}
+// function timestamp(str) {
+//     return new Date(str).getTime();
+// }
 
-noUiSlider.create(dateSlider, {
-    range: {
-        min: timestamp('1920'),
-        max: timestamp('2022')
-    },
+// noUiSlider.create(dateSlider, {
+//     range: {
+//         min: timestamp('1920'),
+//         max: timestamp('2022')
+//     },
 
-    step: 7 * 24 * 60 * 60 * 1000,
+//     step: 7 * 24 * 60 * 60 * 1000,
 
-    start: [timestamp('1940'), timestamp('2000')],
-
-
-    format:wNumb({
-        decimals: 0
-    })
-});
+//     start: [timestamp('1940'), timestamp('2000')],
 
 
-var dateValues = [
-    document.getElementById('event-start'),
-    document.getElementById('event-end')
-];
+//     format:wNumb({
+//         decimals: 0
+//     })
+// });
 
-var formatter = new Intl.DateTimeFormat('en-GB', {
-    dateStyle: 'full'
-});
 
-dateSlider.noUiSlider.on('update', function (values, handle) {
-  const fecha = new Date(+values[handle]) 
-  // dateValues[handle].innerHTML =formatter.format(new Date(+values[handle]));
-  let date =  formatter.format(new Date(+values[handle]));
+// var dateValues = [
+//     document.getElementById('event-start'),
+//     document.getElementById('event-end')
+// ];
+
+// var formatter = new Intl.DateTimeFormat('en-GB', {
+//     dateStyle: 'full'
+// });
+
+// dateSlider.noUiSlider.on('update', function (values, handle) {
+//   const fecha = new Date(+values[handle]) 
+//   // dateValues[handle].innerHTML =formatter.format(new Date(+values[handle]));
+//   let date =  formatter.format(new Date(+values[handle]));
  
- dateValues[handle].innerHTML = (fecha.getMonth(date)+1) + "/" + fecha.getFullYear(date)
- });
+//  dateValues[handle].innerHTML = (fecha.getMonth(date)+1) + "/" + fecha.getFullYear(date)
+//  });
 
 
 
-categorias.addEventListener('click',(e)=>{
-    if(e.target.classList.contains("categoria_tapas")){
-        categoriaBtn.forEach(el=>{
-            el.classList.remove("active")
-        })
-        e.target.classList.add("active")
-    }
-})
+// categorias.addEventListener('click',(e)=>{
+//     if(e.target.classList.contains("categoria_tapas")){
+//         categoriaBtn.forEach(el=>{
+//             el.classList.remove("active")
+//         })
+//         e.target.classList.add("active")
+//     }
+// })
 
-formTapas.addEventListener("submit",(e)=>{
-  e.preventDefault()
-})
+// formTapas.addEventListener("submit",(e)=>{
+//   e.preventDefault()
+// })
 
 
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
