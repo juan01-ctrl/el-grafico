@@ -16319,3 +16319,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 #img1.none{
   display:none;
 }
+
+a{
+  cursor:pointer;
+}
