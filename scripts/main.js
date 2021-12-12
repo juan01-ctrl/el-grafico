@@ -239,7 +239,7 @@ noUiSlider.create(dateSlider, {
 
     step: 7 * 24 * 60 * 60 * 1000,
 
-    start: [timestamp('1940'), timestamp('200')],
+    start: [timestamp('1940'), timestamp('2000')],
 
 
     format:wNumb({
