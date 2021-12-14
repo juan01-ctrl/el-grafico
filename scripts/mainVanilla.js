@@ -1,23 +1,4 @@
 
-// Navegador de tapas
-
-const categorias = document.querySelector(".categorias_tapas")
-const categoriaBtn = [...document.querySelectorAll(".categoria_tapas")]
-const formTapas = document.querySelector(".form_tapas")
-
-formTapas.addEventListener("submit",(e)=>{
-  e.preventDefault()
-})
-categorias.addEventListener('click',(e)=>{
- 
-  if(e.target.classList.contains("categoria_tapas")){
-    console.log("hola")
-      categoriaBtn.forEach(el=>{
-          el.classList.remove("active")
-      })
-      e.target.classList.add("active")
-  }
-})
 
 const contenedorElementos = document.querySelector(".contenedor-elementos")
 // const closeBtn = document.querySelector(".close-btn")
