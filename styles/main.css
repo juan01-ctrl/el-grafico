@@ -15654,6 +15654,10 @@ white-space: nowrap;
   
   
 }
+.accordion-item .accordion-button{
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+
+}
 .accordion-button{
   color:rgb(39, 26, 88) !important;
   font-size: 30px;
