@@ -15126,7 +15126,7 @@ padding: 4rem 2rem;
 
   max-width:70%;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 915px){
   .navegador_tapas{
     flex-direction:column;
   }
@@ -15224,7 +15224,18 @@ justify-content:center;
 align-items: center;
 gap:.3rem;
 flex-wrap: wrap;
-width: 100%;
+width: 70%;
+}
+
+
+@media screen and (max-width: 900px){
+  .contenedor_busqueda{
+    flex-direction:column;
+    width: 100%;
+  }
+  .contenedor_busqueda .input_busqueda_tapas{
+    width:90%;
+  }
 }
 .input_busqueda_tapas{
   padding: .5rem;
@@ -15238,13 +15249,14 @@ width: 100%;
 }
 
 .buscar_tapas{
-  font-size: 16px;
+  font-size: 20px;
   background-color:red;
   color:#fff;
   border:none;
   border-radius: 3px;
-  padding: .4rem;
+  padding: .4rem 1rem;
   cursor: pointer;
+  margin:.3rem;
 }
 /* slider fecha */
 

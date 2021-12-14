@@ -1,4 +1,8 @@
+const formTapas = document.querySelector(".form_tapas")
 
+formTapas.addEventListener("submit",(e)=>{
+  e.preventDefault()
+})
 
 const contenedorElementos = document.querySelector(".contenedor-elementos")
 // const closeBtn = document.querySelector(".close-btn")
@@ -6,19 +10,21 @@ const sliderTapas = document.querySelector(".slider-tapas")
 const imgSlider = document.querySelector(".img-slider")
 const sliderFecha = document.querySelector(".slider-tapas .fecha")
 
+if(contenedorElementos){
 
-contenedorElementos.addEventListener("click",(e)=>{
-  if(e.target.classList.contains("close-btn") || e.target.classList.contains("fas")){
-    sliderTapas.classList.add("none")
-  }
-  if(e.target.classList.contains("img")){
-    sliderTapas.classList.remove("none")
-    imgSlider.setAttribute("src",e.target.getAttribute("src"))  
-    // sliderFecha.textContent = 
-    sliderFecha.textContent = e.target.parentNode.previousElementSibling.firstElementChild.textContent
-  }
-
-})
+  contenedorElementos.addEventListener("click",(e)=>{
+    if(e.target.classList.contains("close-btn") || e.target.classList.contains("fas")){
+      sliderTapas.classList.add("none")
+    }
+    if(e.target.classList.contains("img")){
+      sliderTapas.classList.remove("none")
+      imgSlider.setAttribute("src",e.target.getAttribute("src"))  
+      // sliderFecha.textContent = 
+      sliderFecha.textContent = e.target.parentNode.previousElementSibling.firstElementChild.textContent
+    }
+  
+  })
+}
 
 
 
@@ -44,9 +50,21 @@ var imgDiv=$(this).data('id');
 });
 
 
- 
+const categoriasTapas = document.querySelector(".categorias_tapas")
+const categoriaTapas = [...document.querySelectorAll(".categoria_tapas")]
 
+if(categoriasTapas){
 
+  categoriasTapas.addEventListener("click",(e)=>{
+    if(e.target.classList.contains("categoria_tapas")){
+  categoriaTapas.forEach(el=>{
+    el.classList.remove("active")
+  
+  })
+  e.target.classList.add("active")
+    }
+  })
+}
 
  
 
