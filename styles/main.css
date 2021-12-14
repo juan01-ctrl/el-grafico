@@ -16580,3 +16580,20 @@ margin-right:auto ;
   outline: none;
   padding: 0;
 }
+
+.fecha_slider-container{
+  padding:1rem 0 3rem;
+  display:flex;
+flex-direction:column;
+gap:1rem;
+}
+.fecha_slider-container label{
+  font-size:20px;
+}
+
+@media screen and (min-width: 760px){
+  .fecha_slider-container{
+    gap:2rem;
+    flex-direction:row;
+  }
+}
