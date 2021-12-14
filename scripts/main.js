@@ -2,6 +2,29 @@
 'use strict';
 
 
+const contenedorElementos = document.querySelector(".contenedor-elementos")
+// const closeBtn = document.querySelector(".close-btn")
+const sliderTapas = document.querySelector(".slider-tapas")
+const imgSlider = document.querySelector(".img-slider")
+const sliderFecha = document.querySelector(".slider-tapas .fecha")
+
+
+contenedorElementos.addEventListener("click",(e)=>{
+  if(e.target.classList.contains("close-btn") || e.target.classList.contains("fas")){
+    sliderTapas.classList.add("none")
+  }
+  if(e.target.classList.contains("img")){
+    sliderTapas.classList.remove("none")
+    imgSlider.setAttribute("src",e.target.getAttribute("src"))  
+    // sliderFecha.textContent = 
+    sliderFecha.textContent = e.target.parentNode.previousElementSibling.firstElementChild.textContent
+  }
+
+})
+
+
+
+
 const imgFile = document.getElementById("img1")
 function ImageSetter(input,target) {
   if (input.files && input.files[0]) {
@@ -225,56 +248,58 @@ const categorias = document.querySelector(".categorias_tapas")
 const categoriaBtn = [...document.querySelectorAll(".categoria_tapas")]
 
 
-const dateSlider = document.getElementById('slider-date');
-
-function timestamp(str) {
-    return new Date(str).getTime();
-}
-
-noUiSlider.create(dateSlider, {
-    range: {
-        min: timestamp('1920'),
-        max: timestamp('2022')
-    },
-
-    step: 7 * 24 * 60 * 60 * 1000,
-
-    start: [timestamp('1940'), timestamp('2000')],
-
-
-    format:wNumb({
-        decimals: 0
-    })
-});
-
-
-var dateValues = [
-    document.getElementById('event-start'),
-    document.getElementById('event-end')
-];
-
-var formatter = new Intl.DateTimeFormat('en-GB', {
-    dateStyle: 'full'
-});
-
-dateSlider.noUiSlider.on('update', function (values, handle) {
-  const fecha = new Date(+values[handle]) 
-  // dateValues[handle].innerHTML =formatter.format(new Date(+values[handle]));
-  let date =  formatter.format(new Date(+values[handle]));
- 
- dateValues[handle].innerHTML = (fecha.getMonth(date)+1) + "/" + fecha.getFullYear(date)
- });
-
-
-
 categorias.addEventListener('click',(e)=>{
     if(e.target.classList.contains("categoria_tapas")){
+      console.log("hola")
         categoriaBtn.forEach(el=>{
             el.classList.remove("active")
         })
         e.target.classList.add("active")
     }
 })
+
+// const dateSlider = document.getElementById('slider-date');
+
+// function timestamp(str) {
+//     return new Date(str).getTime();
+// }
+
+// noUiSlider.create(dateSlider, {
+//     range: {
+//         min: timestamp('1920'),
+//         max: timestamp('2022')
+//     },
+
+//     step: 7 * 24 * 60 * 60 * 1000,
+
+//     start: [timestamp('1940'), timestamp('2000')],
+
+
+//     format:wNumb({
+//         decimals: 0
+//     })
+// });
+
+
+// var dateValues = [
+//     document.getElementById('event-start'),
+//     document.getElementById('event-end')
+// ];
+
+// var formatter = new Intl.DateTimeFormat('en-GB', {
+//     dateStyle: 'full'
+// });
+
+// dateSlider.noUiSlider.on('update', function (values, handle) {
+//   const fecha = new Date(+values[handle]) 
+//   // dateValues[handle].innerHTML =formatter.format(new Date(+values[handle]));
+//   let date =  formatter.format(new Date(+values[handle]));
+ 
+//  dateValues[handle].innerHTML = (fecha.getMonth(date)+1) + "/" + fecha.getFullYear(date)
+//  });
+
+
+  
 
 formTapas.addEventListener("submit",(e)=>{
   e.preventDefault()
@@ -530,9 +555,6 @@ formTapas.addEventListener("submit",(e)=>{
   },{"../_modules/header/header":1,"../_modules/slider/slider":2}]},{},[3])
   
   //# sourceMappingURL=main.js.map
-
-
-
 
 
 

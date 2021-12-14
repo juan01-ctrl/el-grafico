@@ -9,8 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.js" integrity="sha512-7i2V4phHspcYYpLujbQU0Ur1NjN6h0oWic1YVo8V1gLtBzOziltT3XX/5XaAmhbvtx3QjyANL/MIyuTpXh/Ndw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.css" integrity="sha512-MKxcSu/LDtbIYHBNAWUQwfB3iVoG9xeMCm32QV5hZ/9lFaQZJVaXfz9aFa0IZExWzCpm7OWvp9zq9gVip/nLMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.js" integrity="sha512-g3FJPwAwaXCWh7vnq0+Jq2v2eB2DuELCYRJ7xi7yIPCYM6SdYNxAWZCBKhl9ZyysWHEWie3q0VUcnxTyoCsT7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="../styles/main.css">
 </head>
@@ -97,7 +101,7 @@
         <div class="titulo-princ-am">
 
           <h1>Navegador de Tapas</h1>
-          <label class="subrayado-amarillo title tapas"></label>
+          <!-- <label class="subrayado-amarillo title tapas"></label> -->
 
         </div>
       </div>
@@ -164,6 +168,8 @@
     <section class="listado__main">
       <h4>se encontraron <strong class="danger">Nresultados</strong></h4>
       <div class="contenedor-elementos">
+        <input type="hidden" id="title" value="Titulo1">
+        <input type="hidden" id="desc" value="descripcion1">
         <div class="contenedor-tapas">
           <div class="fecha-edicion">
 
@@ -175,55 +181,69 @@
               <label class="subrayado-amarillo tapa" for="edicion"></label>
             </div>
           </div>
-          <input type="hidden" id="title" value="Titulo1">
-          <input type="hidden" id="desc" value="descripcion1">
-          <a href="#" id="contenedor-img-tapas">
+          <div class="contenedor-img-tapas">
             <img class="img"
               src="https://images.daznservices.com/di/library/GOAL/6c/c6/rafael-santos-borre-river-flamengo-final-copa-libertadores-23112019_f0afq9mucyry1mua5k0lmh9uz.jpg?t=-1642105458&amp;quality=60&amp;w=1200&amp;h=800" />
 
-          </a>
-        </div>
-
-        <div class="contenedor-tapas">
-          <div class="fecha-edicion">
-
-            <h3 class="fecha">fecha</h3>
-
-
-            <div id="edicion">
-              <h3>edicion</h3>
-              <label class="subrayado-amarillo tapa" for="edicion"></label>
-            </div>
           </div>
+        </div>
+<div class="slider-tapas none">
+  <button class="close-btn"><i class="fas fa-times"></i></button>
+  <img class="img-slider" src="https://images.daznservices.com/di/library/GOAL/6c/c6/rafael-santos-borre-river-flamengo-final-copa-libertadores-23112019_f0afq9mucyry1mua5k0lmh9uz.jpg?t=-1642105458&amp;quality=60&amp;w=1200&amp;h=800" alt="img">
+  <div class="info-card">
+    <div class="fecha-edicion">
+
+      <h3 class="fecha">25 de mayo 2008</h3>
+
+
+      <div id="edicion">
+        <h3 class="edicion-tapa">ED.4378</h3>
+      </div>
+    </div>
+    <h2>LIONEL ANDRÉS MESSI</h2>
+    <p>El Gráfico conseguía entrevistar al flamante mejor jugador del mundo. Las ilusiones puestas en Alemania, las posibilidades de ganarse un lugar en el equipo de Pékerman y de consagrarse Campeón del Mundo.</p>
+    <ul class="eg-social eg-social--negative">
+      <li>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-facebook"> </i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-youtube-play"></i></a>
+      </li>
+    </ul>
+  </div>
+</div>
+        <div class="contenedor-tapas">
           <input type="hidden" id="title" value="Titulo2">
           <input type="hidden" id="desc" value="descripcion2">
-          <a href="#" id="contenedor-img-tapas">
-            <img
+          <div class="fecha-edicion">
+
+            <h3 class="fecha">fecha</h3>
+
+
+            <div id="edicion">
+              <h3>edicion</h3>
+              <label class="subrayado-amarillo tapa" for="edicion"></label>
+            </div>
+          </div>
+          <div class="contenedor-img-tapas">
+            <img class="img"
               src="https://as01.epimg.net/futbol/imagenes/2021/03/25/internacional/1616692330_390331_1616692880_noticia_normal_recorte1.jpg" />
 
-          </a>
+          </div>
         </div>
         <div class="contenedor-tapas">
-          <div class="fecha-edicion">
-
-            <h3 class="fecha">fecha</h3>
-
-
-            <div id="edicion">
-              <h3>edicion</h3>
-              <label class="subrayado-amarillo tapa" for="edicion"></label>
-            </div>
-          </div>
-
+          
           <input type="hidden" id="title" value="Titulo3">
           <input type="hidden" id="desc" value="descripcion3">
-
-          <a href="#" id="contenedor-img-tapas">
-            <img src="http://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2019/09/24/15693255707470.jpg" />
-
-          </a>
-        </div>
-        <div class="contenedor-tapas">
           <div class="fecha-edicion">
 
             <h3 class="fecha">fecha</h3>
@@ -235,38 +255,37 @@
             </div>
           </div>
 
+          <div class="contenedor-img-tapas">
+            <img class="img" src="http://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2019/09/24/15693255707470.jpg" />
+
+          </div>
+        </div>
+        <div class="contenedor-tapas">
+          
           <input type="hidden" id="title" value="Titulo4">
           <input type="hidden" id="desc" value="descripcion4">
+          <div class="fecha-edicion">
 
-          <a id="contenedor-img-tapas">
-            <img
+            <h3 class="fecha">fecha</h3>
+
+
+            <div id="edicion">
+              <h3>edicion</h3>
+              <label class="subrayado-amarillo tapa" for="edicion"></label>
+            </div>
+          </div>
+
+          <div class="contenedor-img-tapas">
+            <img class="img"
               src="https://www.infobae.com/new-resizer/qlCahNiCy_SeoFhlaBVC3X5Z8SA=/1200x900/filters:format(jpg):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/AGQVGT3WOFDWLHZEDUDG62QFOM" /><span>
 
-          </a>
+              </div>
         </div>
+        
         <div class="contenedor-tapas">
-          <div class="fecha-edicion">
-
-            <h3 class="fecha">fecha</h3>
-
-
-            <div id="edicion">
-              <h3>edicion</h3>
-              <label class="subrayado-amarillo tapa" for="edicion"></label>
-            </div>
-          </div>
-
+          
           <input type="hidden" id="title" value="Titulo5">
           <input type="hidden" id="desc" value="descripcion5">
-
-          <a id="contenedor-img-tapas">
-            <img
-              src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /><span>
-
-          </a>
-        </div>
-
-        <div class="contenedor-tapas">
           <div class="fecha-edicion">
 
             <h3 class="fecha">fecha</h3>
@@ -278,14 +297,33 @@
             </div>
           </div>
 
-          <input type="hidden" id="title" value="Titulo1">
-          <input type="hidden" id="desc" value="descripcion1">
-
-          <a id="contenedor-img-tapas">
-            <img
+          <div class="contenedor-img-tapas">
+            <img class="img"
               src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /><span>
 
-          </a>
+              </div>
+        </div>
+
+        <div class="contenedor-tapas">
+          
+          <input type="hidden" id="title" value="Titulo1">
+          <input type="hidden" id="desc" value="descripcion1">
+          <div class="fecha-edicion">
+
+            <h3 class="fecha">fecha</h3>
+
+
+            <div id="edicion">
+              <h3>edicion</h3>
+              <label class="subrayado-amarillo tapa" for="edicion"></label>
+            </div>
+          </div>
+
+          <div class="contenedor-img-tapas">
+            <img class="img"
+              src="https://as01.epimg.net/argentina/imagenes/2020/04/21/futbol/1587464348_803507_1587464465_noticia_normal_recorte1.jpg" /><span>
+
+              </div>
         </div>
     </div>
       <a class="ver-mas">Cargar Mas</a>

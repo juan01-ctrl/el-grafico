@@ -129,8 +129,12 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 0.67em 0;
+  text-transform: uppercase;
+  color:#000;
+  font-weight: 600;
+  
 }
 
 
@@ -15109,11 +15113,44 @@ ul {
 }
 
 .navegador_tapas{
+
   width:100vw;
 padding: 4rem 2rem;
-  background-color: #e2d8d8;
+  background-color: #eaeaea;
   position:relative;
 
+}
+
+.home .navegador_tapas{
+  display:flex;
+  padding:2rem 4rem;
+  align-items:center;
+  justify-content:space-between;
+  gap:2rem;
+}
+.img_tapas_home{
+  max-height:400px;
+}
+.home .info_container_tapas{
+  font-family: "Fjalla One", sans-serif;
+
+  max-width:70%;
+}
+@media screen and (max-width: 800px){
+  .navegador_tapas{
+    flex-direction:column;
+  }
+  .home .info_container_tapas{
+    max-width:100%;
+    width:100%;
+  }
+}
+.home .info_container_tapas .titulo_tapa{
+font-size:35px;
+color:rgb(46, 44, 44)
+}
+.info_tapas_home{
+  width:100%
 }
 .navegador_tapas::after{
   content:"";
@@ -15125,22 +15162,54 @@ padding: 4rem 2rem;
 margin: 0 auto;
 left: 17.5%;
 }
+.fecha_tapa{
+  color:#ff0000;
+  font-size:16px
+}
+.titulo_tapa{
+  margin:0;
+}
+.contenido_tapa{
+  color:rgb(63, 59, 59)
+}
+/*  */
+.tapa_presentacion{
+width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+}
+.tapa_presentacion a{
+  color:rgb(46, 44, 44);
+  text-decoration:underline 1px solid rgb(46, 44, 44);
+}
+
 
 .form_tapas{
+  font-family: "Fjalla One", sans-serif;
   display:flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.navegador_tapas input{
+font-family: inherit;
+font-weight: 500;
+}
 
 .categorias_tapas{
   display:flex;
-  align-items:center;
+  align-items:space-between;
   justify-content:center;
-  flex-wrap:wrap
+  flex-wrap:wrap;
+  gap:.4rem;
+  margin:1rem 0 2.5rem;
 }
 
 .categoria_tapas{
+  font-family: "Fjalla One", sans-serif;
+
   border:1px solid rgb(97, 92, 92);
   border-radius: 22px;
   background-color: transparent;
@@ -15148,8 +15217,8 @@ left: 17.5%;
   cursor: pointer;
   font-weight: 600;
   color: rgb(97, 92, 92);
-  font-size: 14px;
-  margin:.7rem;
+  font-size: 1.2rem;
+  width:12rem;
 }
 
 .categoria_tapas.active{
@@ -15162,12 +15231,17 @@ left: 17.5%;
 .contenedor_busqueda{
 display: flex;
 justify-content:center;
+align-items: center;
 gap:.3rem;
 flex-wrap: wrap;
+width: 100%;
 }
 .input_busqueda_tapas{
-  padding: .3rem;
-  font-size: 15px;
+  padding: .5rem;
+  font-size: 18px;
+  width: 40%;
+  border:1px solid #aeaeae;
+  border-radius:8px;
 }
 .input_busqueda_tapas:focus{
   outline:none;
@@ -15318,6 +15392,8 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Fjalla One", sans-serif;
+
 }
 .form-tapas,.contenedor-filtros-tapas.wrapper{
   background: rgb(234,234,234);
@@ -15467,32 +15543,33 @@ input[type="range"]:active::-webkit-slider-thumb{
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  padding:1rem 4rem 2rem;
 }
   
 
 
 .contenedor-elementos .contenedor-tapas{
-    margin: 0px 40px;
+    margin: 0px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:70%;
+
     align-items: stretch;
 }
 
 .contenedor-tapas .fecha-edicion .fecha{
+  font-family: "Fjalla One", sans-serif;
   background: red;
   color: white;
-  padding: 3px 15px;
-  margin-bottom: 22px;
-
+text-transform: uppercase;
+white-space: nowrap;
 }
 
 
-.contenedor-elementos #contenedor-img-tapas{
+.contenedor-elementos .contenedor-img-tapas{
 
       width: 100%;
-      height: 340 px;
+      height: 340px;
       display: flex;
       align-items: flex-end;
 
@@ -15502,10 +15579,10 @@ input[type="range"]:active::-webkit-slider-thumb{
 .contenedor-elementos .fecha-edicion{
   display: flex;
   position: relative;
-  top: 15px;
+  align-items:center;
   justify-content: space-between;
 }
-#contenedor-img-tapas img{
+.contenedor-img-tapas img{
   
   width: 100%;
   object-fit: cover;
@@ -15516,14 +15593,33 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 
 .main_contact, .main_ventas, .main_faq{
-  padding:3rem 1.5rem 4rem;
+  padding:0 1.5rem 4rem;
 }
 
+
+.contenedor-contacto input:focus{
+  border:1px solid #ff0000
+}
 
 .contenedor-contacto{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:60%;
+  margin:0 auto;
+}
+
+@media screen and (max-width: 760px){
+  .contenedor-contacto{
+    width:80%;
+   
+  }
+}
+@media screen and (max-width: 540px){
+  .contenedor-contacto{
+    width:100%;
+   
+  }
 }
 .contenedor-contacto .titulo-princ-am h1{
   text-align: center;
@@ -15549,10 +15645,7 @@ input[type="range"]:active::-webkit-slider-thumb{
   color: red;
 }
 
-.btn-enviar .btn-primary{
-  background-color: #dc0514 !important;
-  border: none;
-}
+
 
 .container-faq{
   display: flex;
@@ -15566,11 +15659,19 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .accordion{
   margin: 0px 18px;
+  width:100%;
   
   
   
 }
-
+.accordion-button{
+  color:rgb(39, 26, 88) !important;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform:uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  background-color:transparent !important;
+}
 .redes-soc{
   display: flex;
   flex-direction: row;
@@ -15608,13 +15709,31 @@ input[type="range"]:active::-webkit-slider-thumb{
 .titulo-princ-am{
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
-  border-bottom: 7px solid red;
+  position:relative;
+  width: 100%;
 }
 
+.titulo-princ-am::after{
+  content:"";
+  position:absolute;
+  width:100vw;
+  height:3px;
+  background-color:#ff0000;
+  bottom:0;
+  left:0;
+  margin-bottom:1rem;
+}
+.main_contact .titulo-princ-am::after, .main_faq .titulo-princ-am::after{
+ 
+  left:-1.5rem;
+
+}
+.contenedor-navegador-tapas .titulo-princ-am::after{
+ height:0;
+}
 .titulo-princ-am h1{
   text-align: left;
-  margin-bottom: 0px;
+  margin-bottom: 2rem;
 }
 
 #edicion{
@@ -15653,6 +15772,7 @@ input[type="range"]:active::-webkit-slider-thumb{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom:2rem;
 }
 
 .ver-mas{
@@ -15669,7 +15789,8 @@ input[type="range"]:active::-webkit-slider-thumb{
   color: white;
 }
 .contenedor-politicas{
-  margin: 0 20%;
+  margin:0;
+  padding: 2rem 10%;
 }
 
 .contenedor-politicas h2{
@@ -15695,7 +15816,8 @@ input[type="range"]:active::-webkit-slider-thumb{
       width: 15rem;
     }
     .titulo-princ-am{
-      margin: 10px 135px 50px;
+      margin:0 auto;
+      padding: 0;
     }
   
   /*
@@ -15730,7 +15852,7 @@ input[type="range"]:active::-webkit-slider-thumb{
   */
   
   .accordion{
-    margin: 0px 180px;
+    
     padding: 0px 18px;
   
     
@@ -15742,23 +15864,42 @@ input[type="range"]:active::-webkit-slider-thumb{
   .contenedor-elementos{
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     
   }
 
 }
-@media only screen and (min-width: 800px) {
-  
-  .contenedor-elementos .contenedor-tapas{
-    margin: 0px 40px;
-    width: 24%;
-  }
-  .contenedor-elementos .contenedor-tapas h3{
-    align-items: flex-end;
-  }
-
-  
+.contenedor-elementos .contenedor-tapas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+width:22%;
+  align-items: stretch;
 }
+
+
+@media screen and (max-width: 670px){
+  .contenedor-elementos .contenedor-tapas{
+    width: 100% ;
+  
+  }
+  .contenedor-elementos{
+    padding:2rem ;
+  }
+}
+@media screen and (min-width:670px) and (max-width: 950px){
+  .contenedor-elementos .contenedor-tapas{
+    width: 45% ;
+  
+  }
+  .contenedor-elementos{
+    padding:2rem ;
+  }
+}
+
+
+
+
 .footer_nav_tapas{
   margin-top:3rem
 
@@ -15970,18 +16111,7 @@ input[type="range"]:active::-webkit-slider-thumb{
   background-color: #012;
   border-radius: 25px;
 }
-.values{
-  /*background-color: #333;
-  width: 32%;
-  position: relative;
-  margin: auto;
-  padding: 10px 0;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 25px;
-  color: #d5d5d5;*/
-}
+
 .container-filtro .range1,.range2{
   position: absolute;
   bottom: 16px;
@@ -15993,19 +16123,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 .range2.month, .range2.year{
   right: 0px;
 }
-.values:before{
- /* content: "";
-  position: absolute;
-  height: 0;
-  width: 0;
-  border-top: 15px solid #3264fe;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  margin: auto;
-  bottom: -14px;
-  left: 0;
-  right: 0;*/
-}
+
 .contenedor-elementos{
   display: flex;
   flex-direction: column;
@@ -16015,28 +16133,20 @@ input[type="range"]:active::-webkit-slider-thumb{
   
 
 
-.contenedor-elementos .contenedor-tapas{
-    margin: 0px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:70%;
-    align-items: stretch;
-}
+
 
 .contenedor-tapas .fecha-edicion .fecha{
   background: red;
   color: white;
-  padding: 3px 15px;
-  margin-bottom: 22px;
+  padding: 6px;
 
 }
 
 
-.contenedor-elementos #contenedor-img-tapas{
+.contenedor-elementos .contenedor-img-tapas{
 
       width: 100%;
-      height: 340 px;
+      height: 340px;
       display: flex;
       align-items: flex-end;
 
@@ -16049,8 +16159,8 @@ input[type="range"]:active::-webkit-slider-thumb{
   top: 15px;
   justify-content: space-between;
 }
-#contenedor-img-tapas img{
-  
+.contenedor-img-tapas img{
+  cursor:pointer;
   width: 100%;
   object-fit: cover;
   height: 55vh;
@@ -16071,11 +16181,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 
 
-.contenedor-politicas .titulo-princ-am{
-  
-}
-.contenedor-politicas{
-}
+
 .danger{
   color: red;
 }
@@ -16091,8 +16197,14 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 
 .btn-enviar .btn-primary{
+  font-weight:600;
   background-color: #dc0514 !important;
   border: none;
+  font-size: 22px;
+  padding:.2rem 2rem;
+  font-family: "Fjalla One", sans-serif;
+  color:#fff
+
 }
 
 .container-faq{
@@ -16107,7 +16219,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .accordion{
   margin: 0px 18px;
-  
+  padding:0 4rem
 
   
 }
@@ -16149,14 +16261,9 @@ input[type="range"]:active::-webkit-slider-thumb{
 .titulo-princ-am{
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
-  border-bottom: 7px solid red;
+
 }
 
-.titulo-princ-am h1{
-  text-align: left;
-  margin-bottom: 0px;
-}
 
 #edicion{
   display: flex;
@@ -16211,9 +16318,7 @@ input[type="range"]:active::-webkit-slider-thumb{
   padding: 3px;
   color: white;
 }
-.contenedor-politicas{
-  margin: 0 20%;
-}
+
 
 .contenedor-politicas h2{
   text-align: initial;
@@ -16237,9 +16342,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     .venta{
       width: 15rem;
     }
-    .titulo-princ-am{
-      margin: 10px 135px 50px;
-    }
+  }
   
   /*
     tapas - filtro
@@ -16273,8 +16376,8 @@ input[type="range"]:active::-webkit-slider-thumb{
   */
   
   .accordion{
-    margin: 0px 180px;
-    padding: 0px 18px;
+    margin: 0px auto;
+  
   
     
   }
@@ -16289,19 +16392,19 @@ input[type="range"]:active::-webkit-slider-thumb{
     
   }
 
-}
+/* }
 @media only screen and (min-width: 800px) {
   
   .contenedor-elementos .contenedor-tapas{
-    margin: 0px 40px;
-    width: 24%;
+    margin: 0px 5px;
+width: 30%;
   }
   .contenedor-elementos .contenedor-tapas h3{
     align-items: flex-end;
   }
 
   
-}
+} */
 /*
 */
 
@@ -16337,3 +16440,141 @@ a{
   align-items:center;
   padding: 1rem 0 !important;
 }
+
+/* slider tapas */
+.slider-tapas.none{
+opacity: 0;
+pointer-events:none
+}
+.slider-tapas{
+  display:flex;
+  width:90%;
+  background-color:#eaeaea;
+  padding:3rem;
+
+  gap:3rem;
+  font-family:"Fjalla One", sans-serif;
+  position:fixed;
+
+  bottom:5rem;
+  left:5%;
+  z-index:1111;
+  box-shadow: 6px 11px 9px -3px rgba(0,0,0,0.66);
+  transition:opacity .3s ease-in-out;
+
+}
+.slider-tapas button{
+  position:absolute;
+  top:1rem;
+  right:1rem;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  font-size:22px
+}
+
+.slider-tapas img{
+  max-width:40%;
+  object-fit: cover;
+}
+.slider-tapas .fecha{
+  background-color:#ff0000;
+  color:#fff;
+  font-family:"Fjalla One", sans-serif;
+  padding:6px;
+}
+.slider-tapas .edicion-tapa{
+  position:relative;
+}
+.slider-tapas .edicion-tapa::after{
+  content:"";
+  position:absolute;
+  width:90%;
+  height:8px;
+  z-index: -1;
+  background-color:#fdef4a;
+  bottom:1px;
+  left:0;
+}
+.slider-tapas p{
+  font-size:17px;
+  color:rgb(36, 34, 34);
+  line-height: 1.5;
+  /* letter-spacing:1px; */
+  position:relative
+}
+.slider-tapas h2{
+  font-size:2.3rem;
+  margin:.2rem 0;
+;
+color: #192f91;}
+
+.slider-tapas p::after{
+  content:"";
+  position:absolute;
+  bottom:-2rem;
+  left:0;
+  height:3px;
+  width:72px;
+  background-color:rgb(36, 34, 34);
+}
+.info-card .fa,.info-card .fab{
+  color:rgb(36, 34, 34);
+  padding-top:3rem
+}
+.info-card ul{padding:0}
+ @media screen and (max-width: 700px) {
+  
+  .slider-tapas{
+    flex-direction:column;
+    gap:0;
+    align-items:center;
+    bottom:2rem;
+  }
+  .slider-tapas img{
+    max-width:70%;
+  }
+} 
+/*  */
+img{
+  max-width:100%;
+}
+.titulo-princ-am{
+  position:relative;
+}
+.titulo-princ-am h1{
+  position:relative;
+  text-align:center;
+  margin-bottom:2rem;
+  display: inline-block;
+width:max-content;
+margin-left:auto ;
+margin-right:auto ;
+
+}
+
+
+/* .subrayado-amarillo.title{
+  position:absolute;
+  left:20%;
+  bottom:0;
+} */
+
+.titulo-princ-am h1::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:14px;
+  background-color: yellow;
+  bottom:3px;
+  left:0;
+  z-index: -1;
+}
+
+
+.info-p{
+  font-weight: 500;
+  color:#000;
+  font-size:20px;
+}
+
