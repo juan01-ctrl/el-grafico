@@ -11698,6 +11698,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
   .header__top .header__hamburguer {
     display: none;
+  
   }
 }
 
@@ -12045,18 +12046,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-color: #dc0514;
 }
 
-.header__hamburguer {
-  cursor: pointer;
-  width: 25px;
-  height: 25px;
-  margin: auto;
-  background: none;
-  border: none;
-  -webkit-appearance: none;
-          appearance: none;
-  outline: none;
-  padding: 0;
-}
+
 
 .header__hamburguer span {
   background-color: #fff;
@@ -16578,3 +16568,15 @@ margin-right:auto ;
   font-size:20px;
 }
 
+.header__hamburguer {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+          appearance: none;
+  outline: none;
+  padding: 0;
+}
