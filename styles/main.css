@@ -16597,3 +16597,15 @@ gap:1rem;
     flex-direction:row;
   }
 }
+.fecha_inicial-tapas, .fecha_final-tapas{
+  display:flex;
+  align-items:center;
+}
+
+.tapa_presentacion h4{
+  font-size:22px;
+  background-color:#fff;
+  padding:.2rem .5rem;
+  box-shadow: 4px 3px 0px 0px rgba(0,0,0,0.75);
+
+}
