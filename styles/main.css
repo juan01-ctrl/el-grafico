@@ -15678,6 +15678,21 @@ white-space: nowrap;
   font-family: 'Fjalla One', sans-serif;
   background-color:transparent !important;
 }
+.accordion-button.collapsed::after{
+content:"+";
+background:none;
+width:auto;
+height:auto;
+color:#ff0000
+}
+.accordion-button:not(.collapsed)::after{
+  content:"-";
+  background:none;
+width:auto;
+height:auto;
+color:#ff0000
+ 
+}
 .redes-soc{
   display: flex;
   flex-direction: row;
@@ -15722,17 +15737,28 @@ white-space: nowrap;
 .titulo-princ-am::after{
   content:"";
   position:absolute;
-  width:100vw;
+  width:65vw;
   height:3px;
   background-color:#ff0000;
   bottom:0;
   left:0;
   margin-bottom:1rem;
 }
-.main_contact .titulo-princ-am::after, .main_faq .titulo-princ-am::after{
+.main_privacidad{
+  padding: 1.5rem;
+}
+.main_privacidad .titulo-princ-am::after,.main_ventas .titulo-princ-am::after,.main_contact .titulo-princ-am::after, .main_faq .titulo-princ-am::after{
  
-  left:-1.5rem;
+  left:calc(-1.5rem + 17vw);
 
+}
+@media screen and (max-width: 760px){
+  .main_privacidad .titulo-princ-am::after,.main_ventas .titulo-princ-am::after,.main_contact .titulo-princ-am::after, .main_faq .titulo-princ-am::after{
+ 
+    left:-1.5rem;
+    width:100vw;
+  
+  }
 }
 .contenedor-navegador-tapas .titulo-princ-am::after{
  height:0;
@@ -15796,7 +15822,7 @@ white-space: nowrap;
 }
 .contenedor-politicas{
   margin:0;
-  padding: 2rem 10%;
+  padding: 2rem 5%;
 }
 
 .contenedor-politicas h2{
@@ -15857,12 +15883,7 @@ white-space: nowrap;
     tapas - tapas
   */
   
-  .accordion{
-    
-    padding: 0px 18px;
   
-    
-  }
  
   .fecha-edicion{
     width: 100%;
@@ -16225,9 +16246,19 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .accordion{
   margin: 0px 18px;
-  padding:0 4rem
+  padding:0 24%;
 
   
+}
+
+@media screen and (max-width: 760px){
+  .accordion{
+    padding:0 12%;
+    
+  }
+  .titulo-princ-am h1{
+    font-size:32px;
+  }
 }
 
 .redes-soc{
