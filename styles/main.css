@@ -16625,7 +16625,7 @@ gap:1rem;
   box-shadow: 4px 3px 0px 0px rgba(0,0,0,0.75);
 
 }
-.header__side .fab,.header__side .fa{
+.fab,.fa{
  transition:.3s ease-in-out;
 }
 .fab:hover,.fa:hover{
