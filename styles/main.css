@@ -16664,3 +16664,6 @@ gap:1rem;
 .accordion-item{
   border:none;
 }
+.accordion-body{
+  padding:1rem 0;
+}
