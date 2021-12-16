@@ -15668,7 +15668,9 @@ white-space: nowrap;
 }
 .accordion-item .accordion-button{
   box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
-
+margin-bottom: 1rem;
+padding:.5rem;
+padding-left:  .2rem;
 }
 .accordion-button{
   color:rgb(39, 26, 88) !important;
@@ -16245,7 +16247,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 
 .accordion{
-  margin: 0px 18px;
+  margin: 2.5rem 0 1rem;
   padding:0 24%;
 
   
@@ -16410,12 +16412,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     tapas - tapas
   */
   
-  .accordion{
-    margin: 0px auto;
-  
-  
-    
-  }
+
  
   .fecha-edicion{
     width: 100%;
